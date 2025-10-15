@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeleHealth Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; margin: 10px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to TeleHealth Connect</h1>
+    <p>Your online health assistant.</p>
+
+    <a href="{{ url_for('auth.register') }}"><button>Register</button></a>
+    <a href="{{ url_for('auth.login') }}"><button>Login</button></a>
+</body>
+</html>
